@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {Grid, Cell} from 'react-mdl'
+import image from './../assest/rash.jpeg'
 class LandingPage extends Component{
     render(){
         return(
@@ -7,33 +8,31 @@ class LandingPage extends Component{
             <Grid className="grid-landing">
                 <Cell col={12}>
                     <img
-                    src="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.0-9/p720x720/64683539_689694851480702_832093619463651328_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=431VYw91d6UAX9FVM68&_nc_ht=scontent.fbbi1-1.fna&_nc_tp=6&oh=537771697e6e900c911cad5f3c2119a5&oe=5ECA8A17"
+                    src={image}
                     alt="rashmi"
                     className="image"
                     />
                 </Cell>
                 <div className="banner-text">
                     <h1>Full Stack Developer</h1>
-
-
                     <hr/>
-                    <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | Node Js | Express | MongoDB</p>
+                    <p>PHP | PHP Laravel | PHP Phalcon | PHP Codeigniter | React/Redux | JavaScript | HTML/CSS | Bootstrap | MySQL | Core Java | C Language</p>
                     <div className="social-links">
                         {/*LinkedIn*/}
-                        <a href="http://google.com" rel="noopener noreferrer"  target="_blank">
+                        <a href="https://www.linkedin.com/in/rashmi-tirkey/" rel="noopener noreferrer"  target="_blank">
                             <li className=" fa fa-linkedin-square" aria-hidden="true"></li>
                         </a>
                          {/*Github*/}
-                         <a href="http://google.com" rel="noopener noreferrer"  target="_blank">
+                         <a href="https://github.com/rashmi-tirkey/" rel="noopener noreferrer"  target="_blank">
                             <li className=" fa fa-github-square" aria-hidden="true"></li>
                         </a>
                          {/*Freecodecamp*/}
-                         <a href="http://google.com" rel="noopener noreferrer"  target="_blank">
-                            <li className=" fa fa-free-code-camp" aria-hidden="true"></li>
+                         <a href="https://www.hackerrank.com/tirkeyrashmi42" rel="noopener noreferrer"  target="_blank">
+                         <i class='fab fa-hackerrank' style={{fontSize:'52px',color: "white", paddingTop:"14px"}}  aria-hidden="true"></i>
                         </a>
                          {/*YouTube*/}
-                         <a href="http://google.com" rel="noopener noreferrer"  target="_blank">
-                            <li className=" fa fa-youtube-square" aria-hidden="true"></li>
+                         <a href="https://www.facebook.com/profile.php?id=100013205796982" rel="noopener noreferrer"  target="_blank">
+                            <li className=" fa fa-facebook-square" aria-hidden="true"></li>
                         </a>
                         
                     </div>

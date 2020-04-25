@@ -5,10 +5,10 @@ class Experience extends Component {
   render() {
     return(
       <Grid>
-        <Cell col={4}>
+        <Cell col={4} style={{ paddingTop: '0px' }}>
           <p>{this.props.startYear} - {this.props.endYear}</p>
         </Cell>
-        <Cell col={8}>
+        <Cell col={8} style={{ paddingTop: '0px' }}>
           <h4 style={{marginTop:'0px'}}>{this.props.jobName}</h4>
           <p>{this.props.jobDescription}</p>
         </Cell>

@@ -1,86 +1,107 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { Grid, Cell } from 'react-mdl';
 import Education from './education';
 import Experience from './experience';
 import Skills from './skills';
+import rash from './../assest/rash2.jpeg'
 
-class Resume extends Component{
-    render(){
-        return(
+class Resume extends Component {
+    render() {
+        return (
             <div>
-            <Grid>
-                <Cell col={4}>
-                    <div style={{textAlign: 'center'}}>
-                    <img
-                        src="https://scontent.fbbi1-1.fna.fbcdn.net/v/t1.0-9/p720x720/64683539_689694851480702_832093619463651328_o.jpg?_nc_cat=100&_nc_sid=85a577&_nc_ohc=431VYw91d6UAX9FVM68&_nc_ht=scontent.fbbi1-1.fna&_nc_tp=6&oh=537771697e6e900c911cad5f3c2119a5&oe=5ECA8A17"
-                        alt="avatar"
-                        style={{height: '200px'}}
-                        />
-                    </div>
-                    <h2 style={{paddingTop: '2em'}}>Rashmi Kumari </h2>
-                    <h4 style={{color: 'grey'}}>Programmer</h4>
-                    <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                    <h5>Address</h5>
-                    <p>1 Hacker Way Menlo Park, 94025</p>
-                    <h5>Phone</h5>
-                    <p>(123) 456-7890</p>
-                    <h5>Email</h5>
-                    <p>someone@example.com</p>
-                    <h5>Web</h5>
-                    <p>mywebsite.com</p>
-                    <hr style={{borderTop: '3px solid #833fb2', width: '50%'}}/>
-                </Cell>
-                <Cell className="resume-right-col" col={8}>
-                    <h2>Education</h2>
-                    <Education
-                    startYear={2002}
-                    endYear={2006}
-                    schoolName="My University"
-                    schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                    />
-                    <Education
-                        startYear={2007}
-                        endYear={2009}
-                        schoolName="My 2nd University"
-                        schoolDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                        />
-                        <hr style={{borderTop: '3px solid #e22947'}} />
-                    <h2>Experience</h2>
-                    <Experience
-                    startYear={2009}
-                    endYear={2012}
-                    jobName="First Job"
-                    jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                    />
-                    <Experience
-                        startYear={2012}
-                        endYear={2016}
-                        jobName="Second Job"
-                        jobDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
-                        />
-                    <hr style={{borderTop: '3px solid #e22947'}} />
-                    <h2>Skills</h2>
-                    <Skills
-                        skill="javascript"
-                        progress={100}
-                        />
-                        <Skills
-                        skill="HTML/CSS"
-                        progress={80}
-                        />
-                        <Skills
-                            skill="NodeJS"
-                            progress={50}
+                <Grid>
+                    <Cell col={4}>
+                        <div style={{ textAlign: 'center' }} className="header-image">
+                            <img
+                                src={rash}
+                                alt="avatar"
+                                style={{ height: '300px' }}
                             />
-                            <Skills
-                            skill="React"
-                            progress={25}
+                        </div>
+                        <h2 style={{ paddingTop: '2em' }}>Rashmi Tirkey </h2>
+                        <h4 style={{ color: 'grey' }}>About Me</h4>
+                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+                        <p>
+                            I have 1.5 years experience as a software developer.
+                            I am able to handle multiple tasks on a daily basis,
+                            always energetic and eager to learn new skills,
+                            flexible in my working hours, being able to work evenings and weekends,
+                            motivated to do exercise before work to get fit and healthy.
+                    </p>
+                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+                        <h5>Address</h5>
+                        <p>Kanan Vihar Phase-2, Patia, Bhubaneswar, 751024 </p>
+                        <h5>Phone</h5>
+                        <p>9337XXXXXX</p>
+                        <h5>Email</h5>
+                        <p>tirkeyrashmi42@gmail.com</p>
+                        <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
+                    </Cell>
+                    <Cell className="resume-right-col resume-wrapper" col={8}>
+                        <h2>Education</h2>
+                        <Education
+                            startYear={2016}
+                            endYear={2018}
+                            schoolName="KiiT University | Patia, Bhubaneshwar, Odisha"
+                            description="MCA (Computer Application)"
+                            marks={"7.76/10"}
+
                         />
-                </Cell>
-            </Grid>
-      </div>
+                        <Education
+                            startYear={2012}
+                            endYear={2015}
+                            schoolName="Nirmala Collage | Ranchi , Jharkhand"
+                            description="BCA (Computer Application)"
+                            marks={"71.3/100"}
+
+                        />
+                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <h2>Experience</h2>
+                        <Experience
+                            startYear={"Oct 2018"}
+                            endYear={"Sep 2019"}
+                            jobName="Maastrix Solution (Software Engineer)"
+                            jobDescription="Worked as a PHP developer and used Phalcon  and Laravel framework | |
+                            Database created and managed | |
+                            Backend code Integrated with frontend | |
+                            Integrated Google Map API in Frondend | |
+                            Unit Testing "
+                        />
+                        <Experience
+                            startYear={"Oct 2019"}
+                            endYear={"Present"}
+                            jobName="Obpoo Solution. (Software Engineer)"
+                            jobDescription="Worked as a PHP and javaScript developer and used Laravel framework | |
+                             Developed User and Admin dashboard End to End | |
+                             Worked on AJAX for Some API calling | |
+                             Implemented QR Code Scanner | |
+                             Unit Testing"
+                            />
+                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <h2>Skills</h2>
+                        <Skills
+                            skill="PHP"
+                            progress={90}
+                        />
+                        <Skills
+                            skill="Javascript"
+                            progress={60}
+                        />
+                        <Skills
+                            skill="HTML/CSS"
+                            progress={60}
+                        />
+                        <Skills
+                            skill="React/Redux"
+                            progress={40}
+                        />
+                        <Skills
+                            skill="C /Java language"
+                            progress={30}
+                        />
+                    </Cell>
+                </Grid>
+            </div>
         )
     }
 }

@@ -9,7 +9,6 @@
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
-  position: fixed;
   top:0;
   left: 0;
   width:100%;
@@ -23,13 +22,12 @@
 .resume-right-col {
   background: #27221F;
   color: white;
-  padding: 2em;
+  /* padding-top: 1px !important; */
 }
 /* contact page css */
 
 .contact-body {
   margin: auto;
-  position: fixed;
   width: 100%;
   height: 100%;
   justify-content: center;
@@ -68,21 +66,25 @@
 
 
 /* contact page css */
+.mdl-cell{
+  padding-top: 5em;
+}
 .image{
   height: 250px;
-  padding-top: 5em;
+  border-radius: 5px;
 }
 .banner-text{
   background-color: black;
   opacity: .8;
-  width: 75%;
+  width: 95%;
   margin: auto;
   border-radius: 10px;
 }
 .banner-text h1{
-  font-size: 66px;
+  font-size: 40px;
   font-weight: bold;
   color: white;
+  padding: 2px;
 }
 .banner-text hr{
  border-top:5px dotted white ;
@@ -90,18 +92,73 @@
  margin: auto;
 }
 .banner-text p{
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   padding: 1em;
 }
 .social-links{
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 .social-links li{
  color: white;
- font-size: 5em;
+ font-size: 4em;
  padding: 8px;
 }
+.grid-landing{
+  min-height: 100vh;
+}
+
+.header-image{
+  height: 300px;
+}
+.header-image img{
+  height: 100%;
+  border-radius: 5px;
+}
+.project-des{
+  padding: 50px 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.select-box{
+  width: 90%;
+  margin: 50px;
+}
+.select-box:focus{
+  outline:none
+}
+.select{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.select:focus{
+  outline:none 
+}
+@media only screen and (min-width: 768px) {
+  .banner-text{
+    width: 75%;
+  }
+  .banner-text h1{
+    font-size: 66px;
+  }
+  .social-links{
+    width: 50%;
+  }
+  .social-links li{
+    font-size: 5em;
+   }
+   .banner-text p{
+    font-size: 20px;
+  }
+  .project-des{
+    padding: 80px 150px;
+  }
+  .select-box{
+    width: 30%;
+  }
+} 
